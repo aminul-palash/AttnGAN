@@ -5,6 +5,10 @@ from __future__ import unicode_literals
 
 
 from nltk.tokenize import RegexpTokenizer
+
+from bnlp import NLTKTokenizer
+bnltk = NLTKTokenizer()
+
 from collections import defaultdict
 from miscc.config import cfg
 
@@ -117,6 +121,7 @@ class TextDataset(data.Dataset):
 
         self.class_id = self.load_class_id(split_dir, len(self.filenames))
         self.number_example = len(self.filenames)
+        
 
     def load_bbox(self):
         data_dir = self.data_dir
@@ -144,10 +149,12 @@ class TextDataset(data.Dataset):
 
     def load_captions(self, data_dir, filenames):
         all_captions = []
+        p = 0
         for i in range(len(filenames)):
             cap_path = '%s/text/%s.txt' % (data_dir, filenames[i])
             with open(cap_path, "r") as f:
                 captions = f.read().split('\n')
+                print(captions)
                 cnt = 0
                 for cap in captions:
                     if len(cap) == 0:
@@ -155,9 +162,14 @@ class TextDataset(data.Dataset):
                     cap = cap.replace("\ufffd\ufffd", " ")
                     # picks out sequences of alphanumeric characters as tokens
                     # and drops everything else
+                    # tokenizer = RegexpTokenizer(r'\w+')
+                    # tokens = tokenizer.tokenize(cap.lower())
                     tokenizer = RegexpTokenizer("[\u0980-\u09FF']+")
                     tokens = tokenizer.tokenize(cap)
-                    print('tokens', tokens)
+
+                    # tokens = bnltk.word_tokenize(cap)
+                    # print('tokens', tokens)
+                    # input("wait... tokens")
                     if len(tokens) == 0:
                         print('cap', cap)
                         continue
@@ -165,9 +177,12 @@ class TextDataset(data.Dataset):
                     # tokens_new = []
                     # for t in tokens:
                     #     t = t.encode('ascii', 'ignore').decode('ascii')
+                        
                     #     if len(t) > 0:
                     #         tokens_new.append(t)
-                    # all_captions.append(tokens_new)
+                    # print(tokens_new)
+                    # input()
+                    all_captions.append(tokens)
                     cnt += 1
                     if cnt == self.embeddings_num:
                         break
