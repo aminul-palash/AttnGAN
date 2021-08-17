@@ -155,19 +155,19 @@ class TextDataset(data.Dataset):
                     cap = cap.replace("\ufffd\ufffd", " ")
                     # picks out sequences of alphanumeric characters as tokens
                     # and drops everything else
-                    tokenizer = RegexpTokenizer(r'\w+')
-                    tokens = tokenizer.tokenize(cap.lower())
-                    # print('tokens', tokens)
+                    tokenizer = RegexpTokenizer("[\u0980-\u09FF']+")
+                    tokens = tokenizer.tokenize(cap)
+                    print('tokens', tokens)
                     if len(tokens) == 0:
                         print('cap', cap)
                         continue
 
-                    tokens_new = []
-                    for t in tokens:
-                        t = t.encode('ascii', 'ignore').decode('ascii')
-                        if len(t) > 0:
-                            tokens_new.append(t)
-                    all_captions.append(tokens_new)
+                    # tokens_new = []
+                    # for t in tokens:
+                    #     t = t.encode('ascii', 'ignore').decode('ascii')
+                    #     if len(t) > 0:
+                    #         tokens_new.append(t)
+                    # all_captions.append(tokens_new)
                     cnt += 1
                     if cnt == self.embeddings_num:
                         break
