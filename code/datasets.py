@@ -6,9 +6,6 @@ from __future__ import unicode_literals
 
 from nltk.tokenize import RegexpTokenizer
 
-from bnlp import NLTKTokenizer
-bnltk = NLTKTokenizer()
-
 from collections import defaultdict
 from miscc.config import cfg
 
