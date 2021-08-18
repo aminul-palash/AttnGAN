@@ -33,7 +33,7 @@ def drawCaption(convas, captions, ixtoword, vis_size, off1=2, off2=2):
     # get a font
     # fnt = None  # ImageFont.truetype('Pillow/Tests/fonts/FreeMono.ttf', 50)
     # fnt = ImageFont.load_default()
-    fnt = ImageFont.truetype('/content/AttnGAN/code/Li Manowar Saros ANSI V2.ttf', 50)
+    fnt = ImageFont.truetype('/content/AttnGAN/code/Li Manowar Saros Unicode.ttf', 40)
     # get a drawing context
     d = ImageDraw.Draw(img_txt)
     sentence_list = []
