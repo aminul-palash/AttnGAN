@@ -2,6 +2,11 @@
 Pytorch implementaion of Attentional Generative Adversial Network ([AttnGAN](http://openaccess.thecvf.com/content_cvpr_2018/papers/Xu_AttnGAN_Fine-Grained_Text_CVPR_2018_paper.pdf)) for Bengali Language
 
 
+<p align="center"><b><i>Sample generated bengali text to image results</i></b></p>
+
+| "রঙিন পাখি যার একটি নীল মাথা মুখ এবং  পেট সাদা এবং সাদা নীল পালক" | "ছোট পাখির একটি ছোট বিল কালো উইংবার সাদা বুক এবং একটি সোনার গলা রয়েছে" <img width=240/>| "একটি ছোট পাখি যার উজ্জ্বল লাল মুকুট এবং পেট বাদামী ডানা এবং বাদামী গালের প্যাচ" |
+|:--:|:--:|:--:|
+<img src="examples/blue.png" width="240" height="240"/> | <img src="examples/black.png" width="240" height="240"/> | <img src="examples/red.png" width="240" height="240"/> |
 
 
 
