@@ -23,6 +23,10 @@ In addition, please add the project folder to PYTHONPATH and `pip install` the f
 - `nltk`
 - `scikit-image`
 
+### Copied from LICENSE file (MIT License) for visibility:
+*Copyright for most part of this project bengali T2I are held by Tao Xu, 2018 as part of project AttnGAN. All other copyright for project Bengali T2I are held by this project owner, 2021. __All non-data files that have not been modified by owner include the copyright notice "Copyright (c) 2018 Tao Xu" at the top of the file.__*
+
+
 **Reference**
 
 - [AttnGAN: Fine-Grained Text to Image Generation with Attentional Generative Adversarial Networks](https://arxiv.org/abs/1711.10485) [[code]](https://github.com/taoxugit/AttnGAN)
