@@ -1,4 +1,4 @@
-# AttnGAN (Python 3, Pytorch 1.0)
+# Bangla Text to Image  Generation
 Pytorch implementaion of Attentional Generative Adversial Network ([AttnGAN](http://openaccess.thecvf.com/content_cvpr_2018/papers/Xu_AttnGAN_Fine-Grained_Text_CVPR_2018_paper.pdf)) for Bengali Language
 
 
