@@ -26,9 +26,8 @@ In addition, please add the project folder to PYTHONPATH and `pip install` the f
 
 
 ### TODO:
-- [] preprocessed meta data and dataset 
+- [ ] preprocessed meta data and dataset 
 - [ ] Training 
 - [ ] pretrained model
 - [ ] valiadation
-- [ ] 
 - [ ] Deploy as a web app that makes it easy to control the specific image one wants to generate
