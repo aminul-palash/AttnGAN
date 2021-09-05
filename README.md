@@ -6,6 +6,11 @@ Pytorch implementaion of Attentional Generative Adversial Network ([AttnGAN](htt
   <img src="examples/t2i_home.png" align="center" width="500" height="400" />
 </p>
 
+<p align="center"><b><i>Sample generated results of our model.</i></b></p>
+<p align="center">
+  <img src="examples/t2i_samples.png" align="center" width="500" height="400" />
+</p>
+
 <p align="center"><b><i>Sample generated bengali text to image results</i></b></p>
 
 | "রঙিন পাখি যার একটি নীল মাথা মুখ এবং  পেট সাদা এবং সাদা নীল পালক" | "ছোট পাখির একটি ছোট বিল কালো উইংবার সাদা বুক এবং একটি সোনার গলা রয়েছে" <img width=240/>| "একটি ছোট পাখি যার উজ্জ্বল লাল মুকুট এবং পেট বাদামী ডানা এবং বাদামী গালের প্যাচ" |
