@@ -3,7 +3,7 @@ Pytorch implementaion of Attentional Generative Adversial Network ([AttnGAN](htt
 
 <p align="center"><b><i>Sample generated results of our model. First row contains images of three different resolutions (low-to-high). Second and third row represents top-5 most attented words of out attention model.</i></b></p>
 
-<img src="examples/t2i_home.png" width="1000" height="400"/>
+<img src="examples/t2i_home.png" width="800" height="400"/>
 
 
 
