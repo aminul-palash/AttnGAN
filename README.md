@@ -5,12 +5,12 @@ Pytorch implementaion of Attentional Generative Adversial Network ([AttnGAN](htt
   <img src="examples/archi.png" align="center" width="1000" height="400" />
 </p>
 
-<p align="center"><b><i>Sample generated results of our model. First row contains images of three different resolutions (low-to-high). Second and third row represents top-5 most attented words of out attention model.</i></b></p>
+<!-- <p align="center"><b><i>Sample generated results of our model. First row contains images of three different resolutions (low-to-high). Second and third row represents top-5 most attented words of out attention model.</i></b></p>
 <p align="center">
   <img src="examples/t2i_home.png" align="center" width="1000" height="600" />
-</p>
+</p> -->
 
-<p align="center"><b><i>xamples of text-to-image synthesis by our Attentional GAN model.</i></b></p>
+<p align="center"><b><i>examples of text-to-image synthesis by our Attentional GAN model.</i></b></p>
 <p align="center">
   <img src="examples/T2I_samples.png" align="center" width="1000" height="400" />
 </p>
