@@ -18,7 +18,7 @@ Pytorch implementaion of Attentional Generative Adversial Network ([AttnGAN](htt
 
 <p align="center"><b><i>examples of text-to-image synthesis by our Attentional GAN model.</i></b></p>
 <p align="center">
-  <img src="examples/T2I_samples.png" align="center" width="1000" height="400" />
+  <img src="examples/T2I_samples.png" align="center" width="1000" height="600" />
 </p>
 
 <p align="center"><b><i>Sample generated bengali text to image results</i></b></p>
