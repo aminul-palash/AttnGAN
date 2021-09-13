@@ -12,7 +12,7 @@ Pytorch implementaion of Attentional Generative Adversial Network ([AttnGAN](htt
 
 <p align="center"><b><i>Attention maps of text-to-image synthesis by our Attentional GAN model.</i></b></p>
 <p align="center">
-  <img src="examples/attntion.png" align="center" width="800" height="400" />
+  <img src="examples/attntion.png" align="center" width="700" height="400" />
 </p>
 
 
